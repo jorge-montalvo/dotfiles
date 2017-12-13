@@ -7,7 +7,10 @@ set t_Co=256
 hi Normal ctermbg=none
 hi NonText ctermbg=none
 
+"close curly brace
 inoremap {<CR> {<CR>}<ESC>O<TAB>
+"new line above & below
+nnoremap <LEADER>o 2o<ESC>ki
 
 set tabstop=4
 set shiftwidth=4
@@ -16,3 +19,4 @@ set autoindent
 
 set number
 set mouse=a
+set nowrap
